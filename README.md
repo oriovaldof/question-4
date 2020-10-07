@@ -19,7 +19,7 @@ Symfony
     $ composer install
 
 #### Configure an env file
-Change the database user, password and name if you want.
+    Change the database user, password and name if you want.
 
 #### Migrate database
     $  php bin/console doctrine:database:create
