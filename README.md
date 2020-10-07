@@ -12,17 +12,23 @@ Symfony
 ## Installation guide
 
 #### Clone the project 
-    $ git clone https://github.com/oriovaldof/question-3.git question-3
-    $ cd question-3
+    $ git clone https://github.com/oriovaldof/question-4.git question-4
+    $ cd question-4
        
 #### Install Composer dependencies
     $ composer install
+
+#### Configure an env file
+Change the database user, password and name if you want.
+
+#### Migrate database
+    $  php bin/console doctrine:database:create
     
+    $  php bin/console doctrine:migrations:migrate
+
 #### Start Server Symfony
     $ symfony server:start    
 #### The application will be available at
 http://localhost:8000/
 
-*http://localhost:8000/lucky/number*
->To access the page of random numbers 
 
