@@ -1,0 +1,18 @@
+{% extends 'base.html.twig' %}
+
+{% block stylesheets %}
+    {{ include('post/_style.html.twig') }}
+ {% endblock %}
+
+
+{% block title %}Novo Post{% endblock %}
+
+{% block body %}
+    
+        <h1>Criando Nova Postagem</h1>
+
+        {{ include('post/_form.html.twig', {'button_label': 'Salvar'}) }}
+
+        <a href="{{ path('post_index') }}"   class="btn btn-primary">Voltar</a>
+    
+{% endblock %}
